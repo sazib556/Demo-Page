@@ -1,0 +1,193 @@
+*
+{
+    text-decoration: none;
+    color: inherit;
+
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*-------Hero------*/
+
+.hero
+{
+    background: linear-gradient(90deg, rgba(255, 255,255, 0.03) 0 2px, transparent 2px 90px);
+    background-color: #2b2f54;
+    color: #fff;
+    min-height: 315px;
+    position: relative;
+}
+
+.nav
+{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo
+{
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+.logo b
+{
+    font-weight: 700;
+    color: #8b8fab;
+}
+
+.nav ul
+{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav a
+{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: #d5d7e6;
+
+}
+
+.nav a:hover 
+{
+    color: #fff;
+}
+
+.hero-content
+{
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 18px 24px 62px;
+    text-align: center;
+}
+
+.hero h1
+{
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: 3px;
+    margin-bottom: 38px;
+}
+
+.btn
+{
+    display: inline-block;
+    background: #e9524d;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    padding: 11px 17px;
+    border-radius: 2px;
+    transition: background 0.2s;
+}
+
+.btn:hover
+{
+    background: #d64540;
+}
+
+/*-----Features-------*/
+.features
+{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 36px 24px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px 38px;
+}
+
+.feature svg
+{
+
+}
+
+.feature h3
+{
+    font-family: 'Montserrat', Arial, sans-serif;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.feature p
+{
+    font-size: 12px;
+    line-height: 1.7;
+    color: #888;
+}
+
+/*-------Responsive---------*/
+@media (max-width: 760px)
+{
+    .nav
+    {
+        flex-direction: column;
+        height: auto;
+        padding: 18px 24px;
+        gap: 12px;
+    }
+
+    .nav ul 
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px 20px;
+    }
+
+    .hero h1 
+    {
+        font-size: 24px;
+    }
+
+    .features
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @meadia (max-width:480px)
+    {
+        .features
+        {
+            grid-template-columns: 1fr;
+        }
+
+        .feature p
+        {
+            font-size: 11px;
+        }
+
+        .feature h3 
+        {
+            font-size: 10px;
+        }
+    }
+    
+}
